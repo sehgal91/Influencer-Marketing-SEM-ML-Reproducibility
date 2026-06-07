@@ -52,6 +52,14 @@ The reproducibility workflow follows these stages:
 7. Export model-performance summaries and feature-importance outputs to Excel files.
 
 ## Software Requirements
+## How to Reproduce the Results
+
+The Python scripts are provided in the `code/` folder. Users may either inspect the generated Excel outputs directly from the `outputs/` folder or rerun the scripts to regenerate the analytical outputs.
+
+### Run external robustness validation
+
+```bash
+python code/external_validation_option_A.py
 
 The analysis was conducted using Python. Required packages are listed in `requirements.txt`.
 
