@@ -44,3 +44,13 @@ python code/external_validation_option_A.py
 
 ```bash
 python code/reproducibility_workflow.py
+## How to Reproduce the Results
+
+The Python scripts are provided in the `code/` folder. Users may either inspect the generated Excel outputs directly from the `outputs/` folder or rerun the scripts to regenerate the analytical outputs.
+
+### Run external robustness validation
+
+```bash
+python code/external_validation_option_A.py
+python code/main_sem_ml_analysis.py
+python code/reproducibility_workflow.py
