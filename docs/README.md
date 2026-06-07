@@ -31,3 +31,11 @@ The primary survey raw responses are not publicly released to protect participan
 - `data/`: Data documentation and external dataset source information.
 - `outputs/`: Excel output files generated from the analysis.
 - `supplementary_material/`: Supplementary Material PDF associated with the study.
+## How to Reproduce the Results
+
+The Python scripts are provided in the `code/` folder. Users may either inspect the generated Excel outputs directly from the `outputs/` folder or rerun the scripts to regenerate the analytical outputs.
+
+### Run external robustness validation
+
+```bash
+python code/external_validation_option_A.py
