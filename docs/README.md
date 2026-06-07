@@ -22,7 +22,7 @@ Saima. (2020). *Effect of Social Media Influencer Marketing on Purchase Intentio
 
 The external validation was conducted using Likert-scale purchase intention as the target variable. Conceptually related predictors associated with influencer expertise, trustworthiness, information credibility, argument quality, attractiveness/likeability, and entertainment value were used for machine-learning validation.
 
-Because the external dataset does not reproduce the same full SEM measurement structure as the primary survey, it was used only for predictive robustness validation and not for full SEM replication.
+Because the external dataset does not reproduce the full SEM measurement structure of the primary survey, it was used only for predictive robustness validation, not for full SEM replication.
 
 ## Software Requirements
 
@@ -32,3 +32,15 @@ Install the required packages using:
 
 ```bash
 pip install -r requirements.txt
+**## How to Reproduce the Results**
+
+The Python scripts are provided in the `code/` folder. Users may either inspect the generated Excel outputs directly from the `outputs/` folder or rerun the scripts to regenerate the analytical outputs.
+
+### Run external robustness validation
+
+```bash
+python code/external_validation_option_A.py
+**### Run complete reproducibility workflow**
+
+```bash
+python code/reproducibility_workflow.py
