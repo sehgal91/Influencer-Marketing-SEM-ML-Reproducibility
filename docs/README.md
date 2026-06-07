@@ -4,53 +4,58 @@
 
 This repository provides reproducibility materials for a study examining influencer credibility, parasocial interaction, product–influencer fit, and purchase intention in short-video and social-commerce contexts. The study integrates SEM-style explanatory modelling, supervised machine-learning prediction, and external robustness validation using an independent influencer-marketing dataset.
 
+The repository contains supplementary material, Python scripts, processed analytical outputs, documentation files, and reproducibility notes required to inspect and reproduce the reported analytical workflow.
+
 ## Repository Contents
 
 - `supplementary_material/`: Supplementary Material PDF associated with the study.
-- `data/`: Processed and documented datasets used for reproducibility.
+- `data/`: Data documentation and external dataset source information.
 - `code/`: Python scripts for SEM-style analysis, machine-learning prediction, and external robustness validation.
 - `outputs/`: Excel output files generated from the analysis workflow.
-- `docs/`: Documentation files describing the external dataset source, workflow, and reproducibility notes.
+- `docs/`: Documentation files describing the workflow, reproducibility notes, and related supporting information.
+- `requirements.txt`: Python package requirements for running the scripts.
+
+## Study Components
+
+The reproducibility package supports the following analytical components:
+
+1. SEM-style explanatory modelling of influencer credibility, parasocial interaction, product–influencer fit, and purchase intention.
+2. Mediation and moderation analysis for the proposed theoretical framework.
+3. Machine-learning prediction of purchase intention using theoretically derived predictors.
+4. External robustness validation using an independent influencer-marketing dataset.
+5. Exported analytical outputs in Excel format for transparent checking.
 
 ## Data Availability
 
-The primary survey raw responses are not publicly released to protect participant confidentiality. Processed and anonymized construct-level data may be provided where ethically shareable. The external validation dataset is publicly available from Mendeley Data:
+The primary survey raw responses are not publicly released to protect participant confidentiality. The repository provides processed analytical outputs and documentation sufficient to inspect the reported results and reproduce the computational workflow where ethically shareable.
+
+The independent external dataset used for robustness validation is publicly available from Mendeley Data:
 
 Saima. (2020). *Effect of Social Media Influencer Marketing on Purchase Intention and the Mediation Effect of Credibility*. Mendeley Data, V1. https://doi.org/10.17632/gdd9htg5gb.1
 
 ## External Robustness Validation
 
-The external validation was conducted using Likert-scale purchase intention as the target variable. Conceptually related predictors associated with influencer expertise, trustworthiness, information credibility, argument quality, attractiveness/likeability, and entertainment value were used for machine-learning validation.
+The external validation was conducted using Likert-scale purchase intention as the target variable. Conceptually related predictors associated with influencer expertise, trustworthiness, attractiveness/likeability, argument quality, information credibility, and entertainment value were used for machine-learning validation.
 
-Because the external dataset does not reproduce the full SEM measurement structure of the primary survey, it was used only for predictive robustness validation, not for full SEM replication.
+Because the external dataset does not reproduce the same full SEM measurement structure as the primary survey, it was used only for predictive robustness validation and not for full SEM replication.
+
+## Analysis Workflow
+
+The reproducibility workflow follows these stages:
+
+1. Import processed analytical data and reported result structures.
+2. Summarize construct-level descriptive statistics.
+3. Report reliability and convergent validity diagnostics.
+4. Summarize SEM-style structural, mediation, and moderation results.
+5. Compare machine-learning models for purchase-intention prediction.
+6. Conduct external robustness validation using an independent influencer-marketing dataset.
+7. Export model-performance summaries and feature-importance outputs to Excel files.
 
 ## Software Requirements
 
-The Python packages required to run the analysis are listed in `requirements.txt`.
+The analysis was conducted using Python. Required packages are listed in `requirements.txt`.
 
 Install the required packages using:
 
 ```bash
 pip install -r requirements.txt
-**## How to Reproduce the Results**
-
-The Python scripts are provided in the `code/` folder. Users may either inspect the generated Excel outputs directly from the `outputs/` folder or rerun the scripts to regenerate the analytical outputs.
-
-### Run external robustness validation
-
-```bash
-python code/external_validation_option_A.py
-**### Run complete reproducibility workflow**
-
-```bash
-python code/reproducibility_workflow.py
-## How to Reproduce the Results
-
-The Python scripts are provided in the `code/` folder. Users may either inspect the generated Excel outputs directly from the `outputs/` folder or rerun the scripts to regenerate the analytical outputs.
-
-### Run external robustness validation
-
-```bash
-python code/external_validation_option_A.py
-python code/main_sem_ml_analysis.py
-python code/reproducibility_workflow.py
